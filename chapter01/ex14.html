@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트</title>
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>배열</h2>
+    </body>
+    <script>
+        let arr01= new Array();
+
+        arr01[0]=1;
+        arr01[1]=100;
+        arr01[2]=50;
+
+        console.log(arr01[0]);
+        console.log(arr01[1]);
+        console.log(arr01[2]);
+
+        console.log("======================");
+
+        // 배열선언
+        let arr02 = [];
+        arr02[0] = 3;
+        arr02[1] = 5;
+        arr02[2] = 7;
+
+        console.log(arr01[1]);
+
+        console.log("======================");
+
+        let arr03=[1,2,3,4,5];
+        console.log(arr03[3]);
+
+        console.log("arr04[]")
+
+        console.log("======================");
+
+        let arr04=[];
+        arr04[0]=1;
+        arr04[1]=2.5;
+        arr04[2]="안녕";
+        arr04[3]="hello";
+        arr04[4]=5>3;
+        arr04[5]=function(){console.log("나는 익명함수")};
+
+
+        for(let i=0;i<arr04.length;i++){
+            console.log(arr04[i]);
+        }
+        arr04[5]();
+
+        console.log("======================");
+        
+        let arr05=[1,2.5, "안녕", ["정우성", "박명수", "유재석"], 5>3]
+        console.log(arr05[1]);  // 2.5
+        console.log(arr05[3][1]); // 박명수
+        console.log(arr05[3][2]); // 유재석
+        console.log(arr05[4]); // true 
+
+        console.log("======================");
+
+        let nameArr=[];
+        nameArr.push("정우성");
+        nameArr.push("박명수");
+
+        console.log(nameArr);   //['정우성', '박명수']
+
+        nameArr.pop();
+        console.log(nameArr);
+
+    </script>
+</html>

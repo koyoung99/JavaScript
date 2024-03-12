@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트</title>
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>코어객체</h2>
+    </body>
+    <script>
+        // date객체
+        let date = new Date();
+        console.log(date);
+
+        let year=date.getFullYear();
+        let month=date.getMonth();
+        let day=date.getDate();
+        let hours=date.getHours();
+        let minutes=date.getMinutes();
+        let seconds=date.getSeconds();
+        let timestamp=date.getTime();
+
+
+        console.log(year, month, day, hours, minutes, seconds, timestamp)
+   
+        // String객체
+        let len = 'Hello'.length;
+        let char = 'Hello'.charAt(0); // 'H'
+        let newStr = 'Hello'.concat(' World'); // 'Hello World'
+        let isIncluded = 'Hello'.includes('ell'); // true
+        let index = 'Hello'.indexOf('l'); // 2
+        let lastIndex = 'Hello'.lastIndexOf('l'); // 3
+        let replaced = 'Hello'.replace('l', 'w'); // 'Hewlo'
+        let sliced = 'Hello'.slice(1, 4); // 'ell'
+        let splitted = 'Hello World'.split(' '); // ['Hello', 'World']
+        let lower = 'Hello'.toLowerCase(); // 'hello'
+        let upper = 'Hello'.toUpperCase(); // 'HELLO'
+        let trimmed = ' Hello '.trim(); // 'Hello'
+
+
+        // Number객체
+        let strNum = (123).toString(); // '123'
+        let fixedNum = (123.456).toFixed(2); // '123.46'
+        let expNum = (123).toExponential(2); // '1.23e+2'
+        let precNum = (123.456).toPrecision(5); // '123.46'
+        let num = Number('123'); // 123
+        let intNum = parseInt('123', 10); // 123
+        let floatNum = parseFloat('123.456'); // 123.456
+        let isNan = isNaN('Hello'); // true
+        let isFiniteNum = isFinite(123); // true
+
+    </script>
+</html>

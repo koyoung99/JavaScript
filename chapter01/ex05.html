@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트</title>
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>switch문</h2>
+    </body>
+    <script>
+        let code=window.prompt("과목번호를 적으세요");
+        console.log(typeof code);
+        code= Number.parseInt(code);
+        switch (code) {
+            case 1: 
+                console.log("R101호");
+                break;
+            case 2: 
+                console.log("R202호");
+                break; 
+            case 3: 
+                console.log("R303호");
+                break;
+            case 4: 
+                console.log("R404호");
+                break;
+            default:
+                break;
+        }
+    </script>
+</html>

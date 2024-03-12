@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트</title>
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>리스트개념예제</h2>
+    </body>
+    <script>
+  
+    let shape=[];
+
+    let triangle={
+        name:"삼각형",
+        width:"5",
+        area:function() {
+            return this.width*this.width*0.5;
+        }
+    };
+    let square={
+        name:"사각형",
+        width:"5",
+        area:function() {
+            return this.width*this.width;
+        }
+    };
+    let circle={
+        name:"원",
+        width:"5",
+        area:function() {
+            return this.width*this.width*3.14;
+        }
+    };
+    
+    shape.push(triangle);
+    shape.push(square);
+    shape.push(circle);
+    
+
+    for(let i=0;i<shape.length;i++){
+        console.log(shape[i].name+"의 넓이는 "+shape[i].area());
+    }
+   
+        
+
+    </script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트</title>
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+    </body>
+    <script>
+        
+        let str= "global"; // 전역 변수를 선언
+       
+        function checkscope(){
+            let str = "local"; // 지역 변수를 선언
+
+            console.log(str); // 전역 변수가 아닌 지역 변수를 사용
+        }
+
+        checkscope(); // 출력 결과: "local"
+        console.log(str); // 출력 결과: "global"
+
+
+       
+    </script>
+</html>
